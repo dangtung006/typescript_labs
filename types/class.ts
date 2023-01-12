@@ -1,4 +1,4 @@
-class Student {
+export class Student {
     public name: string
     private age : number
     readonly  gender : boolean
