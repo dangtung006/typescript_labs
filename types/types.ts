@@ -1,14 +1,19 @@
-// type StringOrNumber  = string | number;
-// type Student = {
-//     id : StringOrNumber,
-//     name : string,
-//     age : number
-// }
+type StringOrNumber  = string | number;
 
-// const newStudent : Student = {
-//     id : 1,
-//     name : "1111",
-//     age : 20
-// }
+type Student = {
+    id : StringOrNumber,
+    name : string,
+    age : number,
+    addr : string
+}
 
-// console.log("newStudent : " , newStudent);
+var getStudentInfo = (id: StringOrNumber): void => {
+    console.log({
+        id : id,
+        name : "demo",
+        age : 32,
+        addr : "HN"
+    });
+}
+
+getStudentInfo(1);
