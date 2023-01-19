@@ -49,3 +49,13 @@ const myRectangle: Rectangle = {
     width : 20
 }
 
+
+// Generic Define :
+interface List<T> {
+    length : number;
+    [index : number] : T;
+}
+
+const numberL: List<number> = [1, 2, 3];
+const stringL : List<string> = ["1", "2", "3"];
+const rectangleL : List<Rectangle> = [{ height: 1, width : 20 }, { height : 2, width : 30}];
